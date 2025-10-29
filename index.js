@@ -9,7 +9,8 @@ const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
         origin: [
-            'https://coasterweb-backend.onrender.com'
+            'https://coasterweb-backend.onrender.com',
+            'https://watkin81.github.io'
         ],
         methods: ['GET', 'POST'],
     },
@@ -19,7 +20,8 @@ const PORT = process.env.PORT || 7270;
 
 app.use(cors({
     origin: [
-        'https://coasterweb-backend.onrender.com'
+        'https://coasterweb-backend.onrender.com',
+        'https://watkin81.github.io'
     ],
 }));
 
@@ -895,4 +897,5 @@ io.on('connection', (socket) => {
 
 server.listen(PORT, '0.0.0.0', () => {
     console.log(`Server is up and running on port ${PORT}!`);
+
 });
