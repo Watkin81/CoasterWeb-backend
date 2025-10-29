@@ -1,0 +1,21 @@
+{
+  "name": "watkin81",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+      "start": "node index.js",
+      "build": "react-scripts build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@g-js-api/g.js": "^3.6.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "osu-parser": "^0.3.3",
+    "socket.io": "^4.7.5",
+    "uuid": "^10.0.0"
+  },
+  "description": ""
+}
